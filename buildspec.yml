@@ -4,7 +4,8 @@ phases:
   install:
     commands:
         - python3 -V
-        - echo "11111111111111111111111111111111111111111111111"
+        - curl -O https://bootstrap.pypa.io/get-pip.py
+        - python3 get-pip.py --user
         - pip3 install flask
   build:
     commands:
